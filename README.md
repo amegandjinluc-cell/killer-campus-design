@@ -1,5 +1,7 @@
 # Killer Campus — Dossier de conception
 
+**Voir le site en ligne :** [killer-campus-design.vercel.app](https://killer-campus-design.vercel.app)
+
 Dossier de conception complet pour **Killer Campus**, une plateforme de services
 universitaires centralisés. Le projet reprend la grille de services et la hiérarchie
 de l'application **Academia** (capture fournie), puis les transpose dans une identité
