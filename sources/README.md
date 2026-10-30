@@ -1,8 +1,7 @@
 # Sources du dossier Killer Campus
 
-Ce dossier contient les documents de conception et les sept maquettes HTML. Le
-README principal, l'arborescence complète et les instructions d'ouverture se trouvent
-à la racine du projet : [`../README.md`](../README.md).
+Ce dossier contient les documents de conception et les sept maquettes HTML. Le README principal, l'arborescence complète et les instructions d'ouverture se trouvent
+dans le dépôt GitHub : [amegandjinluc-cell/killer-campus-design](https://github.com/amegandjinluc-cell/killer-campus-design#readme).
 
 ## Documents
 
