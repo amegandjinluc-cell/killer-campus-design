@@ -2,6 +2,8 @@
 
 **Voir le site en ligne :** [killer-campus-design.vercel.app](https://killer-campus-design.vercel.app)
 
+**Pour comprendre le projet rapidement :** [lire le brief de conception](sources/brief_conception.md)
+
 Dossier de conception complet pour **Killer Campus**, une plateforme de services
 universitaires centralisés. Le projet reprend la grille de services et la hiérarchie
 de l'application **Academia** (capture fournie), puis les transpose dans une identité
@@ -42,6 +44,7 @@ chemins vers le CSS, le JavaScript et les polices sont relatifs et autonomes.
 
 | Livrable | Fichier |
 |---|---|
+| **Brief de conception** | [`sources/brief_conception.md`](sources/brief_conception.md) |
 | Cahier des charges | `sources/cahier_des_charges.md` |
 | 1. Analyse du projet | `sources/analyse_projet.md` |
 | 2. Analyse des références | `sources/analyse_referes.md` |

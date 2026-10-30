@@ -7,6 +7,7 @@ dans le dépôt GitHub : [amegandjinluc-cell/killer-campus-design](https://githu
 
 | Livrable | Fichier |
 |---|---|
+| **Brief de conception** | `brief_conception.md` |
 | Cahier des charges | `cahier_des_charges.md` |
 | 1. Analyse du projet | `analyse_projet.md` |
 | 2. Analyse des références | `analyse_referes.md` |
