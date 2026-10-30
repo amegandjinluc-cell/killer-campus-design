@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tableau de bord étudiant — Killer Campus</title>
+  <meta name="description" content="Tableau de bord étudiant Killer Campus : grille de services, statistiques et activité récente.">
+  <link rel="stylesheet" href="../../styles/killer-campus.css?v=20261032">
+</head>
+<body class="app-body">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <div class="app-shell">
+    <aside class="sidebar" data-sidebar aria-label="Navigation de l’espace étudiant">
+      <div class="sidebar-top">
+        <a class="brand brand--compact" href="accueil.html">
+          <span class="brand-mark">KC</span>
+          <span class="brand-text"><span class="brand-name">Killer Campus</span><span class="brand-sub">Espace étudiant</span></span>
+        </a>
+        <button class="sidebar-close" type="button" aria-label="Fermer le menu" data-sidebar-close>
+          <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-group-label">Vue d’ensemble</div>
+        <a class="sidebar-link is-active" href="dashboard_etudiant.html" aria-current="page">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+          Tableau de bord
+        </a>
+        <a class="sidebar-link" href="#" data-demo-action="Mes cours : vue non incluse dans ce prototype.">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          Mes cours
+          <span class="badge-count">3</span>
+        </a>
+        <a class="sidebar-link" href="#" data-demo-action="Notes et résultats : vue non incluse dans ce prototype.">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 15 8.5 22 9.5 17 14.5 18.2 22 12 18.7 5.8 22 7 14.5 2 9.5 9 8.5z"/></svg>
+          Notes &amp; résultats
+        </a>
+        <a class="sidebar-link" href="#" data-demo-action="Présences : vue non incluse dans ce prototype.">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          Présences
+        </a>
+
+        <div class="nav-group-label">Ressources</div>
+        <a class="sidebar-link" href="bibliotheque.html">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          Bibliothèque
+        </a>
+        <a class="sidebar-link" href="catalogue_tenues.html">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          Boutique
+        </a>
+        <a class="sidebar-link" href="preinscription.html">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/></svg>
+          Préinscription
+        </a>
+
+        <div class="nav-group-label">Compte</div>
+        <a class="sidebar-link" href="#" data-demo-action="Profil : vue non incluse dans ce prototype.">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Mon profil
+        </a>
+        <a class="sidebar-link" href="dashboard_admin.html">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M3 9h6"/></svg>
+          Administration
+        </a>
+      </nav>
+
+      <div class="sidebar-foot">
+        <div class="sidebar-user">
+          <span class="avatar avatar--red">AM</span>
+          <span class="sidebar-user-meta"><strong>Awa Mbaye</strong><span>Étudiante · L3</span></span>
+        </div>
+        <a class="sidebar-link" href="connexion.html">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="m16 17 5-5-5-5M21 12H9"/></svg>
+          Déconnexion
+        </a>
+      </div>
+    </aside>
+
+    <div class="sidebar-scrim" data-sidebar-scrim hidden></div>
+
+    <div class="app-main">
+      <header class="app-topbar">
+        <button class="app-menu" type="button" aria-label="Ouvrir le menu" aria-expanded="false" data-sidebar-toggle>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+        <div class="breadcrumb">Espace étudiant <span>/</span> <strong>Tableau de bord</strong></div>
+        <div class="app-search">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="search" placeholder="Rechercher un service…" aria-label="Rechercher un service">
+        </div>
+        <div class="app-actions">
+          <button class="icon-btn" type="button" aria-label="Notifications, 3 non lues" data-demo-action="3 notifications non lues — démonstration.">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+            <span class="badge-count">3</span>
+          </button>
+          <a class="avatar avatar--red" href="#" aria-label="AM — Profil d’Awa Mbaye" data-demo-action="Profil : vue non incluse dans ce prototype.">AM</a>
+        </div>
+      </header>
+
+      <main class="app-content" id="contenu">
+        <div class="page-head">
+          <div>
+            <span class="eyebrow">Semestre 1 · 2026–2027</span>
+            <h1>Tableau de bord</h1>
+            <p>Vue d’ensemble de votre activité universitaire et de vos services.</p>
+          </div>
+          <div class="page-actions">
+            <a class="btn btn--ghost btn--sm" href="preinscription.html">Mon dossier</a>
+            <button class="btn btn--primary btn--sm" type="button" data-demo-action="Emploi du temps : export simulé.">
+              <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5"/><path d="M5 21h14"/></svg>
+              Exporter
+            </button>
+          </div>
+        </div>
+
+        <section class="dashboard-banner" aria-label="Message de bienvenue">
+          <span class="avatar avatar--red">AM</span>
+          <div>
+            <h2>Bonjour Awa</h2>
+            <p>Vous avez 3 cours aujourd’hui et 2 nouveaux documents dans la bibliothèque.</p>
+          </div>
+          <div class="dashboard-banner-actions">
+            <a class="btn btn--ghost btn--sm" href="bibliotheque.html">Voir les ressources</a>
+          </div>
+        </section>
+
+        <div class="stat-grid mb-14">
+          <article class="card stat-card">
+            <span class="stat-label"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Cours en cours</span>
+            <div class="stat-value">3 <small>/ 5 modules</small></div>
+            <span class="stat-trend">+1 cette semaine</span>
+          </article>
+          <article class="card stat-card">
+            <span class="stat-label"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Présence mensuelle</span>
+            <div class="stat-value">82<small>%</small></div>
+            <span class="stat-trend">+4 pts vs octobre</span>
+          </article>
+          <article class="card stat-card">
+            <span class="stat-label"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 15 8.5 22 9.5 17 14.5 18.2 22 12 18.7 5.8 22 7 14.5 2 9.5 9 8.5z"/></svg> Moyenne générale</span>
+            <div class="stat-value">14,2 <small>/ 20</small></div>
+            <span class="stat-trend">+0,6 pt</span>
+          </article>
+          <article class="card stat-card">
+            <span class="stat-label"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> Événements à venir</span>
+            <div class="stat-value">2</div>
+            <span class="stat-trend is-down">dans les 7 jours</span>
+          </article>
+        </div>
+
+        <section aria-labelledby="services-title">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Grille de services</span>
+              <h2 id="services-title">Tous vos services</h2>
+            </div>
+            <p>Les services les plus fréquents restent en haut de la grille. La capture de référence montre 11 libellés ; la douzième cellule est laissée libre plutôt que remplie avec un nom inventé.</p>
+          </div>
+
+          <div class="service-grid">
+            <a class="service-card is-active" href="#" data-demo-action="Mon profil : vue non incluse dans ce prototype.">
+              <span class="service-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+              <span class="service-label">Mon profil</span>
+              <span class="service-meta">Compte</span>
+            </a>
+            <a class="service-card" href="#" data-demo-action="Mes cours : vue non incluse dans ce prototype.">
+              <span class="badge badge--red">3</span>
+              <span class="service-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+              <span class="service-label">Mes cours</span>
+              <span class="service-meta">3 actifs</span>
+            </a>
+            <a class="service-card" href="#" data-demo-action="Présences : vue non incluse dans ce prototype.">
+              <span class="service-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>
+              <span class="service-label">Présences</span>
+              <span class="service-meta">82 % ce mois</span>
+            </a>
+            <a class="service-card" href="#" data-demo-action="Frais de scolarité : vue non incluse dans ce prototype.">
+              <span class="service-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M2 10h20"/><circle cx="17" cy="14" r="1"/></svg></span>
+              <span class="service-label">Frais</span>
+              <span class="service-meta">À jour</span>
+            </a>
+            <a class="service-card" href="#" data-demo-action="Devoirs : vue non incluse dans ce prototype.">
+              <span class="badge badge--amber">2</span>
+              <span class="service-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/></svg></span>
+              <span class="service-label">Devoirs</span>
+              <span class="service-meta">2 à rendre</span>
+            </a>
+            <a class="service-card" href="#" data-demo-action="Résultats d’examens : vue non incluse dans ce prototype.">
+              <span class="service-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h4"/></svg></span>
+              <span class="service-label">Résultats d’examens</span>
+              <span class="service-meta">Publiés</span>
+            </a>
+            <a class="service-card" href="#" data-demo-action="Événements : vue non incluse dans ce prototype.">
+              <span class="service-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="m12 14 1 2 2 .3-1.5 1.4.4 2-1.9-1-1.9 1 .4-2L9 16.3l2-.3z"/></svg></span>
+              <span class="service-label">Événements</span>
+              <span class="service-meta">2 à venir</span>
+            </a>
+            <a class="service-card" href="#" data-demo-action="Emploi du temps : vue non incluse dans ce prototype.">
+              <span class="service-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg></span>
+              <span class="service-label">Emploi du temps</span>
+              <span class="service-meta">Semaine 44</span>
+            </a>
+            <a class="service-card" href="#" data-demo-action="Circulaires : vue non incluse dans ce prototype.">
+              <span class="service-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+              <span class="service-label">Circulaires</span>
+              <span class="service-meta">4 non lues</span>
+            </a>
+            <a class="service-card" href="#" data-demo-action="Drive académique : vue non incluse dans ce prototype.">
+              <span class="service-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></span>
+              <span class="service-label">Drive académique</span>
+              <span class="service-meta">12 fichiers</span>
+            </a>
+            <a class="service-card" href="#" data-demo-action="Vacances : vue non incluse dans ce prototype.">
+              <span class="service-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="13" rx="2"/><path d="M12 8v13M3 12h18"/><path d="M7 8V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/></svg></span>
+              <span class="service-label">Vacances</span>
+              <span class="service-meta">Calendrier</span>
+            </a>
+            <div class="service-card is-empty" aria-label="Emplacement libre pour un futur service">
+              <span class="service-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span>
+              <span class="service-label">Emplacement libre</span>
+              <span class="service-meta">12e cellule</span>
+            </div>
+          </div>
+        </section>
+
+        <div class="dash-grid mt-24">
+          <section class="panel" aria-labelledby="activity-title">
+            <div class="panel-head">
+              <h2 class="panel-title" id="activity-title">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                Activité récente
+              </h2>
+              <button class="btn btn--ghost btn--sm" type="button" data-demo-action="Historique complet : vue non incluse dans ce prototype.">Tout voir</button>
+            </div>
+            <div class="activity-list">
+              <div class="activity-item">
+                <span class="activity-dot"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></span>
+                <div class="activity-body"><strong>Nouveau support disponible</strong><p>« Algorithmique avancée — notes de cours » a été ajouté à la bibliothèque.</p><time>Il y a 2 heures</time></div>
+              </div>
+              <div class="activity-item">
+                <span class="activity-dot"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>
+                <div class="activity-body"><strong>Présence confirmée</strong><p>Votre présence au cours de « Bases de données » a été enregistrée.</p><time>Hier · 10:15</time></div>
+              </div>
+              <div class="activity-item">
+                <span class="activity-dot"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
+                <div class="activity-body"><strong>Événement à venir</strong><p>Journée portes ouvertes — amphithéâtre A, vendredi à 09:00.</p><time>Dans 3 jours</time></div>
+              </div>
+            </div>
+          </section>
+
+          <div class="stack-14">
+            <section class="panel" aria-labelledby="events-title">
+              <div class="panel-head">
+                <h2 class="panel-title" id="events-title">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                  Prochains événements
+                </h2>
+              </div>
+              <div>
+                <div class="event-item">
+                  <div class="event-date"><strong>07</strong><span>Nov</span></div>
+                  <div class="event-body"><strong>Journée portes ouvertes</strong><span>Amphithéâtre A · 09:00</span></div>
+                </div>
+                <div class="event-item">
+                  <div class="event-date"><strong>12</strong><span>Nov</span></div>
+                  <div class="event-body"><strong>Atelier CV &amp; entretien</strong><span>Bibliothèque · 14:30</span></div>
+                </div>
+              </div>
+            </section>
+
+            <section class="panel" aria-labelledby="progress-title">
+              <div class="panel-head">
+                <h2 class="panel-title" id="progress-title">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 5-6"/></svg>
+                  Progression
+                </h2>
+              </div>
+              <div class="panel-body">
+                <div class="progress-list">
+                  <div class="progress-row">
+                    <div class="progress-row-head"><span>Semestre</span><span>62%</span></div>
+                    <div class="progress-track"><div class="progress-fill" style="width:62%"></div></div>
+                  </div>
+                  <div class="progress-row">
+                    <div class="progress-row-head"><span>Crédits validés</span><span>18 / 30</span></div>
+                    <div class="progress-track"><div class="progress-fill is-green" style="width:60%"></div></div>
+                  </div>
+                  <div class="progress-row">
+                    <div class="progress-row-head"><span>Dossier de stage</span><span>40%</span></div>
+                    <div class="progress-track"><div class="progress-fill is-blue" style="width:40%"></div></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <p class="demo-note mt-24">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.7 2.4 17a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.7a2 2 0 0 0-3.4 0z"/></svg>
+          Données simulées pour la démonstration. La capture de référence montre 11 services et une cellule vide ; aucun douzième libellé n’a été inventé.
+        </p>
+      </main>
+    </div>
+  </div>
+
+  <div class="toast" role="status" aria-live="polite" data-toast>
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+    <span data-toast-message>Action simulée.</span>
+  </div>
+
+  <script src="../../scripts/app.js?v=20261032"></script>
+</body>
+</html>

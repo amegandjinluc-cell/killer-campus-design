@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Connexion — Killer Campus</title>
+  <meta name="description" content="Connexion à l’espace étudiant Killer Campus. Écran de démonstration.">
+  <link rel="stylesheet" href="../../styles/killer-campus.css?v=20261032">
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <div class="auth">
+    <aside class="auth-aside" aria-label="Présentation de Killer Campus">
+      <a class="brand" href="accueil.html">
+        <span class="brand-mark">KC</span>
+        <span class="brand-text">
+          <span class="brand-name">Killer Campus</span>
+          <span class="brand-sub">Services universitaires</span>
+        </span>
+      </a>
+
+      <div class="auth-aside-content">
+        <span class="eyebrow">Espace étudiant</span>
+        <h1>Votre campus.<br><em>Sans détour.</em></h1>
+        <p>
+          Un seul point d’entrée pour les cours, les notes, les présences, la bibliothèque
+          numérique et les services de la vie universitaire.
+        </p>
+        <ul class="auth-list">
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Une grille de services héritée de la référence Academia.</li>
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Une identité sombre, rouge sang et bleu marine.</li>
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Aucune donnée officielle inventée.</li>
+        </ul>
+      </div>
+
+      <div class="auth-aside-foot">
+        <span>Prototype de conception</span>
+        <span>·</span>
+        <span>2026</span>
+      </div>
+    </aside>
+
+    <main class="auth-main" id="contenu">
+      <div class="auth-card">
+        <a class="brand brand--compact" href="accueil.html">
+          <span class="brand-mark">KC</span>
+          <span class="brand-text"><span class="brand-name">Killer Campus</span><span class="brand-sub">Connexion</span></span>
+        </a>
+
+        <h2>Bon retour</h2>
+        <p>Connectez-vous pour retrouver votre tableau de bord et vos services.</p>
+
+        <form class="auth-form" novalidate data-demo-action="Connexion simulée : aucun identifiant n’est vérifié dans cette maquette.">
+          <div class="field">
+            <label class="label" for="email">Adresse email <span class="req">*</span></label>
+            <div class="input-group">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              <input class="input" id="email" name="email" type="email" autocomplete="email" placeholder="vous@universite.sn" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="password">Mot de passe <span class="req">*</span></label>
+            <div class="input-group">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              <input class="input" id="password" name="password" type="password" autocomplete="current-password" placeholder="••••••••" required>
+              <button class="input-action" type="button" aria-label="Afficher le mot de passe" aria-controls="password" aria-pressed="false" data-password-toggle>
+                <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="auth-row">
+            <label class="check">
+              <input type="checkbox" name="remember">
+              Se souvenir de moi
+            </label>
+            <a class="auth-link" href="#" data-demo-action="Réinitialisation simulée : aucun email n’est envoyé.">Mot de passe oublié ?</a>
+          </div>
+
+          <button class="btn btn--primary btn--block" type="submit">
+            Se connecter
+            <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </form>
+
+        <div class="auth-divider">ou</div>
+        <a class="btn btn--ghost btn--block" href="preinscription.html">Créer un dossier de préinscription</a>
+
+        <p class="auth-foot">
+          Retour à l’<a href="accueil.html">accueil</a> · <a href="../../index.html">hub des maquettes</a>
+        </p>
+
+        <p class="demo-note mt-24">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.7 2.4 17a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.7a2 2 0 0 0-3.4 0z"/></svg>
+          Cette page est une maquette : les identifiants ne sont ni envoyés ni vérifiés.
+        </p>
+      </div>
+    </main>
+  </div>
+
+  <div class="toast" role="status" aria-live="polite" data-toast>
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+    <span data-toast-message>Action simulée.</span>
+  </div>
+
+  <script src="../../scripts/app.js?v=20261032"></script>
+</body>
+</html>

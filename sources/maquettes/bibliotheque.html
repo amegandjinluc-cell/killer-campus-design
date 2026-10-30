@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bibliothèque numérique — Killer Campus</title>
+  <meta name="description" content="Bibliothèque numérique Killer Campus : supports pédagogiques gratuits et payants, en démonstration.">
+  <link rel="stylesheet" href="../../styles/killer-campus.css?v=20261032">
+</head>
+<body class="app-body">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <div class="app-shell">
+    <aside class="sidebar" data-sidebar aria-label="Navigation de l’espace étudiant">
+      <div class="sidebar-top">
+        <a class="brand brand--compact" href="accueil.html">
+          <span class="brand-mark">KC</span>
+          <span class="brand-text"><span class="brand-name">Killer Campus</span><span class="brand-sub">Espace étudiant</span></span>
+        </a>
+        <button class="sidebar-close" type="button" aria-label="Fermer le menu" data-sidebar-close>
+          <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-group-label">Vue d’ensemble</div>
+        <a class="sidebar-link" href="dashboard_etudiant.html">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+          Tableau de bord
+        </a>
+        <a class="sidebar-link" href="#" data-demo-action="Mes cours : vue non incluse dans ce prototype.">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          Mes cours
+        </a>
+        <a class="sidebar-link" href="#" data-demo-action="Notes et résultats : vue non incluse dans ce prototype.">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 15 8.5 22 9.5 17 14.5 18.2 22 12 18.7 5.8 22 7 14.5 2 9.5 9 8.5z"/></svg>
+          Notes &amp; résultats
+        </a>
+
+        <div class="nav-group-label">Ressources</div>
+        <a class="sidebar-link is-active" href="bibliotheque.html" aria-current="page">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          Bibliothèque
+        </a>
+        <a class="sidebar-link" href="catalogue_tenues.html">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          Boutique
+        </a>
+        <a class="sidebar-link" href="preinscription.html">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/></svg>
+          Préinscription
+        </a>
+
+        <div class="nav-group-label">Compte</div>
+        <a class="sidebar-link" href="#" data-demo-action="Profil : vue non incluse dans ce prototype.">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Mon profil
+        </a>
+        <a class="sidebar-link" href="dashboard_admin.html">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M3 9h6"/></svg>
+          Administration
+        </a>
+      </nav>
+
+      <div class="sidebar-foot">
+        <div class="sidebar-user">
+          <span class="avatar avatar--red">AM</span>
+          <span class="sidebar-user-meta"><strong>Awa Mbaye</strong><span>Étudiante · L3</span></span>
+        </div>
+        <a class="sidebar-link" href="connexion.html">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="m16 17 5-5-5-5M21 12H9"/></svg>
+          Déconnexion
+        </a>
+      </div>
+    </aside>
+
+    <div class="sidebar-scrim" data-sidebar-scrim hidden></div>
+
+    <div class="app-main">
+      <header class="app-topbar">
+        <button class="app-menu" type="button" aria-label="Ouvrir le menu" aria-expanded="false" data-sidebar-toggle>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+        <div class="breadcrumb">Espace étudiant <span>/</span> <strong>Bibliothèque</strong></div>
+        <div class="app-search">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="search" placeholder="Rechercher un support…" aria-label="Rechercher un support">
+        </div>
+        <div class="app-actions">
+          <button class="icon-btn" type="button" aria-label="Notifications, 3 non lues" data-demo-action="3 notifications non lues — démonstration.">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+            <span class="badge-count">3</span>
+          </button>
+          <a class="avatar avatar--red" href="#" aria-label="AM — Profil d’Awa Mbaye" data-demo-action="Profil : vue non incluse dans ce prototype.">AM</a>
+        </div>
+      </header>
+
+      <main class="app-content" id="contenu">
+        <div class="page-head">
+          <div>
+            <span class="eyebrow">Ressources pédagogiques · démonstration</span>
+            <h1>Bibliothèque numérique</h1>
+            <p>Supports de cours, annales et lectures. Certains contenus sont gratuits, d’autres sont présentés comme payants.</p>
+          </div>
+          <div class="page-actions">
+            <button class="btn btn--ghost btn--sm" type="button" data-demo-action="Mes emprunts : vue non incluse dans ce prototype.">Mes emprunts</button>
+          </div>
+        </div>
+
+        <section class="featured-resource" aria-labelledby="featured-title">
+          <div class="featured-cover">
+            <span>À la une · PDF</span>
+            <strong>Algorithmique<br>avancée</strong>
+          </div>
+          <div class="featured-body">
+            <span class="eyebrow">Sélection de la semaine</span>
+            <h2 id="featured-title">Notes de cours — Algorithmique avancée</h2>
+            <p>Synthèse de 42 pages couvrant les graphes, la complexité et les stratégies de preuve. Document de démonstration, non officiel.</p>
+            <div class="featured-actions">
+              <button class="btn btn--primary btn--sm" type="button" data-demo-action="Lecture simulée : aucun fichier n’est ouvert.">
+                <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                Lire l’extrait
+              </button>
+              <button class="btn btn--ghost btn--sm" type="button" data-demo-action="Téléchargement simulé : aucun fichier n’est généré.">Télécharger</button>
+            </div>
+          </div>
+        </section>
+
+        <div class="filter-bar" data-filter-group data-filter-target=".resource-card">
+          <button class="chip is-active" type="button" data-filter="all">Tout</button>
+          <button class="chip" type="button" data-filter="gratuit">Gratuit</button>
+          <button class="chip" type="button" data-filter="payant">Payant</button>
+          <button class="chip" type="button" data-filter="informatique">Informatique</button>
+          <button class="chip" type="button" data-filter="gestion">Gestion</button>
+          <button class="chip" type="button" data-filter="droit">Droit</button>
+          <span class="filter-spacer"></span>
+          <select class="select select--sm" aria-label="Trier les ressources">
+            <option>Plus récents</option>
+            <option>Titre A–Z</option>
+            <option>Prix croissant</option>
+          </select>
+        </div>
+
+        <div class="library-layout">
+          <div class="library-grid">
+            <article class="resource-card" data-category="gratuit informatique">
+              <div class="resource-cover resource-cover--red">
+                <span class="resource-cover-label">PDF · 42 pages</span>
+                <span class="resource-cover-title">Algorithmique<br>avancée</span>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              </div>
+              <div class="resource-body">
+                <h3>Notes de cours — Algorithmique</h3>
+                <p>Graphes, complexité, preuves</p>
+                <div class="resource-meta"><span class="resource-price is-free">Gratuit</span><button class="btn btn--ghost" type="button" data-demo-action="Ouverture simulée du support.">Ouvrir</button></div>
+              </div>
+            </article>
+
+            <article class="resource-card" data-category="gratuit gestion">
+              <div class="resource-cover resource-cover--green">
+                <span class="resource-cover-label">PDF · 28 pages</span>
+                <span class="resource-cover-title">Comptabilité<br>générale</span>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+              </div>
+              <div class="resource-body">
+                <h3>Comptabilité générale — bases</h3>
+                <p>Écritures, bilan, compte de résultat</p>
+                <div class="resource-meta"><span class="resource-price is-free">Gratuit</span><button class="btn btn--ghost" type="button" data-demo-action="Ouverture simulée du support.">Ouvrir</button></div>
+              </div>
+            </article>
+
+            <article class="resource-card" data-category="payant droit">
+              <div class="resource-cover resource-cover--amber">
+                <span class="resource-cover-label">PDF · 96 pages</span>
+                <span class="resource-cover-title">Droit<br>constitutionnel</span>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M5 7h14M7 7l-3 7h6zM17 7l-3 7h6z"/><path d="M5 21h14"/></svg>
+              </div>
+              <div class="resource-body">
+                <h3>Droit constitutionnel — annales</h3>
+                <p>Sujets corrigés 2022–2025</p>
+                <div class="resource-meta"><span class="resource-price">3 500 FCFA</span><button class="btn btn--outline" type="button" data-demo-action="Achat simulé : aucun paiement n’est effectué.">Acheter</button></div>
+              </div>
+            </article>
+
+            <article class="resource-card" data-category="gratuit informatique">
+              <div class="resource-cover resource-cover--slate">
+                <span class="resource-cover-label">PDF · 64 pages</span>
+                <span class="resource-cover-title">Bases de<br>données</span>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg>
+              </div>
+              <div class="resource-body">
+                <h3>Bases de données — modèle relationnel</h3>
+                <p>SQL, normalisation, transactions</p>
+                <div class="resource-meta"><span class="resource-price is-free">Gratuit</span><button class="btn btn--ghost" type="button" data-demo-action="Ouverture simulée du support.">Ouvrir</button></div>
+              </div>
+            </article>
+
+            <article class="resource-card" data-category="payant gestion">
+              <div class="resource-cover resource-cover--violet">
+                <span class="resource-cover-label">PDF · 120 pages</span>
+                <span class="resource-cover-title">Marketing<br>digital</span>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11v2a1 1 0 0 0 1 1h2l4 4V6L6 10H4a1 1 0 0 0-1 1z"/><path d="M15 9a4 4 0 0 1 0 6"/><path d="M18 6a8 8 0 0 1 0 12"/></svg>
+              </div>
+              <div class="resource-body">
+                <h3>Marketing digital — étude de cas</h3>
+                <p>Stratégie, acquisition, mesure</p>
+                <div class="resource-meta"><span class="resource-price">5 000 FCFA</span><button class="btn btn--outline" type="button" data-demo-action="Achat simulé : aucun paiement n’est effectué.">Acheter</button></div>
+              </div>
+            </article>
+
+            <article class="resource-card" data-category="gratuit droit">
+              <div class="resource-cover resource-cover--red">
+                <span class="resource-cover-label">PDF · 36 pages</span>
+                <span class="resource-cover-title">Méthode<br>du cas</span>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M5 7h14M7 7l-3 7h6zM17 7l-3 7h6z"/><path d="M5 21h14"/></svg>
+              </div>
+              <div class="resource-body">
+                <h3>Méthode du cas pratique</h3>
+                <p>Fiches méthode et exercices</p>
+                <div class="resource-meta"><span class="resource-price is-free">Gratuit</span><button class="btn btn--ghost" type="button" data-demo-action="Ouverture simulée du support.">Ouvrir</button></div>
+              </div>
+            </article>
+
+            <article class="resource-card" data-category="payant informatique">
+              <div class="resource-cover resource-cover--amber">
+                <span class="resource-cover-label">PDF · 80 pages</span>
+                <span class="resource-cover-title">Architecture<br>web</span>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              </div>
+              <div class="resource-body">
+                <h3>Architecture web — patterns</h3>
+                <p>REST, composants, performance</p>
+                <div class="resource-meta"><span class="resource-price">4 000 FCFA</span><button class="btn btn--outline" type="button" data-demo-action="Achat simulé : aucun paiement n’est effectué.">Acheter</button></div>
+              </div>
+            </article>
+
+            <article class="resource-card" data-category="gratuit gestion">
+              <div class="resource-cover resource-cover--green">
+                <span class="resource-cover-label">PDF · 24 pages</span>
+                <span class="resource-cover-title">Économie<br>générale</span>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 5-6"/></svg>
+              </div>
+              <div class="resource-body">
+                <h3>Économie générale — synthèse</h3>
+                <p>Marchés, acteurs, politiques</p>
+                <div class="resource-meta"><span class="resource-price is-free">Gratuit</span><button class="btn btn--ghost" type="button" data-demo-action="Ouverture simulée du support.">Ouvrir</button></div>
+              </div>
+            </article>
+          </div>
+
+          <aside class="panel" aria-labelledby="loans-title">
+            <div class="panel-head">
+              <h2 class="panel-title" id="loans-title">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                Mes emprunts
+              </h2>
+              <span class="badge badge--green">2 actifs</span>
+            </div>
+            <div class="panel-body">
+              <div class="loan-item">
+                <span class="loan-cover"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></span>
+                <div class="loan-body"><strong>Algorithmique avancée</strong><span>Expire dans 12 jours</span></div>
+                <span class="badge badge--green">PDF</span>
+              </div>
+              <div class="loan-item">
+                <span class="loan-cover"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+                <div class="loan-body"><strong>Bases de données</strong><span>Expire dans 5 jours</span></div>
+                <span class="badge badge--amber">Bientôt</span>
+              </div>
+              <div class="summary-note mt-18">
+                <strong>Accès</strong>
+                Les emprunts et téléchargements sont simulés. Aucun fichier réel n’est distribué dans cette maquette.
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <p class="demo-note mt-24">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.7 2.4 17a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.7a2 2 0 0 0-3.4 0z"/></svg>
+          Les documents, auteurs et prix sont fictifs. Les ressources payantes sont clairement signalées et aucune transaction réelle n’est possible.
+        </p>
+      </main>
+    </div>
+  </div>
+
+  <div class="toast" role="status" aria-live="polite" data-toast>
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+    <span data-toast-message>Action simulée.</span>
+  </div>
+
+  <script src="../../scripts/app.js?v=20261032"></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Préinscription — Killer Campus</title>
+  <meta name="description" content="Dossier de préinscription universitaire Killer Campus. Formulaire de démonstration.">
+  <link rel="stylesheet" href="../../styles/killer-campus.css?v=20261032">
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">
+        <span class="brand-mark">KC</span>
+        <span class="brand-text"><span class="brand-name">Killer Campus</span><span class="brand-sub">Services universitaires</span></span>
+      </a>
+      <nav class="topbar-nav" aria-label="Navigation principale">
+        <a class="topbar-link" href="accueil.html">Accueil</a>
+        <a class="topbar-link" href="dashboard_etudiant.html">Services</a>
+        <a class="topbar-link is-active" href="preinscription.html" aria-current="page">Préinscription</a>
+        <a class="topbar-link" href="catalogue_tenues.html">Boutique</a>
+        <a class="topbar-link" href="bibliotheque.html">Bibliothèque</a>
+        <a class="topbar-link" href="dashboard_admin.html">Admin</a>
+      </nav>
+      <div class="topbar-actions">
+        <a class="btn btn--ghost btn--sm" href="connexion.html">Se connecter</a>
+        <a class="btn btn--primary btn--sm" href="preinscription.html">S’inscrire</a>
+        <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-mobile" data-menu-toggle>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-nav" id="menu-mobile" data-mobile-nav>
+      <nav class="mobile-nav-inner" aria-label="Navigation mobile">
+        <a href="accueil.html">Accueil</a>
+        <a href="dashboard_etudiant.html">Services</a>
+        <a href="preinscription.html">Préinscription</a>
+        <a href="catalogue_tenues.html">Boutique</a>
+        <a href="bibliotheque.html">Bibliothèque</a>
+        <a href="dashboard_admin.html">Admin</a>
+        <a href="connexion.html">Connexion</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <div class="container">
+      <div class="page-head" style="padding-top:36px">
+        <div>
+          <span class="eyebrow">Candidature · 2026–2027</span>
+          <h1>Préinscription</h1>
+          <p>Complétez votre dossier en trois étapes. Les informations marquées d’un astérisque sont obligatoires.</p>
+        </div>
+        <div class="page-actions">
+          <a class="btn btn--ghost btn--sm" href="connexion.html">J’ai déjà un compte</a>
+        </div>
+      </div>
+
+      <div class="stepper mb-14" aria-label="Étapes de la préinscription">
+        <div class="step is-done">
+          <span class="step-dot">1</span>
+          <span class="step-label"><strong>Identité</strong><span>Complété</span></span>
+        </div>
+        <div class="step is-active">
+          <span class="step-dot">2</span>
+          <span class="step-label"><strong>Formation</strong><span>En cours</span></span>
+        </div>
+        <div class="step">
+          <span class="step-dot">3</span>
+          <span class="step-label"><strong>Documents</strong><span>À venir</span></span>
+        </div>
+        <div class="step">
+          <span class="step-dot">4</span>
+          <span class="step-label"><strong>Confirmation</strong><span>À venir</span></span>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <form class="panel" novalidate data-demo-action="Dossier simulé : aucune candidature n’est réellement envoyée.">
+          <div class="panel-head">
+            <h2 class="panel-title">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+              Dossier de candidature
+            </h2>
+            <span class="badge badge--amber">Brouillon</span>
+          </div>
+
+          <div class="panel-body">
+            <section class="form-section">
+              <h3 class="form-section-title"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> Identité du candidat</h3>
+              <div class="form-grid">
+                <div class="field">
+                  <label class="label" for="prenom">Prénom <span class="req">*</span></label>
+                  <input class="input" id="prenom" name="prenom" autocomplete="given-name" placeholder="Awa" required>
+                </div>
+                <div class="field">
+                  <label class="label" for="nom">Nom <span class="req">*</span></label>
+                  <input class="input" id="nom" name="nom" autocomplete="family-name" placeholder="Mbaye" required>
+                </div>
+                <div class="field">
+                  <label class="label" for="email">Email <span class="req">*</span></label>
+                  <input class="input" id="email" name="email" type="email" autocomplete="email" placeholder="awa.mbaye@exemple.sn" required>
+                </div>
+                <div class="field">
+                  <label class="label" for="telephone">Téléphone</label>
+                  <input class="input" id="telephone" name="telephone" type="tel" autocomplete="tel" placeholder="+221 77 000 00 00">
+                </div>
+              </div>
+            </section>
+
+            <section class="form-section">
+              <h3 class="form-section-title"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg> Formation souhaitée</h3>
+              <div class="form-grid">
+                <div class="field">
+                  <label class="label" for="universite">Université pilote <span class="req">*</span></label>
+                  <select class="select" id="universite" name="universite" required>
+                    <option value="">Sélectionner une université</option>
+                    <option>Université pilote — à confirmer</option>
+                    <option>Deuxième université — à confirmer</option>
+                  </select>
+                  <span class="hint">Le nom officiel de l’université pilote n’est pas inventé : il reste à valider.</span>
+                </div>
+                <div class="field">
+                  <label class="label" for="filiere">Filière <span class="req">*</span></label>
+                  <select class="select" id="filiere" name="filiere" required>
+                    <option value="">Sélectionner une filière</option>
+                    <option>Informatique</option>
+                    <option>Gestion</option>
+                    <option>Droit</option>
+                    <option>Médecine</option>
+                    <option>Autre — à préciser</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label class="label" for="niveau">Niveau</label>
+                  <select class="select" id="niveau" name="niveau">
+                    <option>Licence 1</option>
+                    <option>Licence 2</option>
+                    <option>Licence 3</option>
+                    <option>Master 1</option>
+                    <option>Master 2</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label class="label" for="promotion">Promotion</label>
+                  <input class="input" id="promotion" name="promotion" placeholder="2026–2027">
+                </div>
+                <div class="field span-2">
+                  <label class="label" for="motivation">Motivation <span class="req">*</span></label>
+                  <textarea class="textarea" id="motivation" name="motivation" placeholder="Expliquez brièvement votre projet d’études…" required></textarea>
+                  <span class="hint">200 à 600 caractères. Aucune donnée n’est envoyée dans cette maquette.</span>
+                </div>
+              </div>
+            </section>
+
+            <section class="form-section">
+              <h3 class="form-section-title"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m17 8-5-5-5 5"/><path d="M12 3v12"/></svg> Pièces justificatives</h3>
+              <div class="upload-grid">
+                <button class="upload-card" type="button" data-demo-action="Upload simulé : aucun fichier n’est réellement importé.">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  <strong>Photo d’identité</strong>
+                  <span>JPG ou PNG · 2 Mo max</span>
+                </button>
+                <button class="upload-card" type="button" data-demo-action="Upload simulé : aucun fichier n’est réellement importé.">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                  <strong>Relevé de notes</strong>
+                  <span>PDF · 5 Mo max</span>
+                </button>
+                <button class="upload-card" type="button" data-demo-action="Upload simulé : aucun fichier n’est réellement importé.">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6v6H9z"/></svg>
+                  <strong>Pièce d’identité</strong>
+                  <span>PDF ou JPG · 5 Mo max</span>
+                </button>
+              </div>
+            </section>
+
+            <div class="form-actions">
+              <span class="hint">Étape 2 sur 4 · sauvegarde locale simulée</span>
+              <div class="form-actions-right">
+                <button class="btn btn--ghost" type="button" data-demo-action="Brouillon enregistré localement (simulation).">Enregistrer le brouillon</button>
+                <button class="btn btn--primary" type="submit">
+                  Continuer
+                  <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <aside class="stack-14">
+          <section class="panel">
+            <div class="panel-head">
+              <h2 class="panel-title">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                Récapitulatif
+              </h2>
+            </div>
+            <div class="panel-body">
+              <div class="summary-list">
+                <div class="summary-row"><span>Candidat</span><strong>Awa Mbaye</strong></div>
+                <div class="summary-row"><span>Formation</span><strong>Licence 3 · Informatique</strong></div>
+                <div class="summary-row"><span>Université</span><strong>À confirmer</strong></div>
+                <div class="summary-row"><span>Documents</span><strong>0 / 3 fournis</strong></div>
+                <div class="summary-row"><span>Frais de dossier</span><strong>Démo — aucun paiement</strong></div>
+              </div>
+              <div class="summary-note mt-18">
+                <strong>Confidentialité</strong>
+                Les données de cette maquette sont fictives. Aucune information personnelle n’est transmise à un serveur.
+              </div>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-head">
+              <h2 class="panel-title">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/></svg>
+                À savoir
+              </h2>
+            </div>
+            <div class="panel-body">
+              <ul class="auth-list">
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Le dossier peut être sauvegardé et repris plus tard.</li>
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Les pièces sont vérifiées par l’administration.</li>
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Aucun paiement réel n’est demandé dans cette démonstration.</li>
+              </ul>
+            </div>
+          </section>
+        </aside>
+      </div>
+
+      <p class="demo-note mt-24">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.7 2.4 17a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.7a2 2 0 0 0-3.4 0z"/></svg>
+        Maquette de préinscription : le formulaire, l’upload et l’envoi sont simulés. Le nom de l’université pilote reste volontairement à confirmer.
+      </p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Killer Campus — prototype</span>
+        <span><a href="accueil.html">Accueil</a> · <a href="../../index.html">Hub des maquettes</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite" data-toast>
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+    <span data-toast-message>Action simulée.</span>
+  </div>
+
+  <script src="../../scripts/app.js?v=20261032"></script>
+</body>
+</html>

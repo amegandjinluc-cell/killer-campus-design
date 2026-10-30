@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catalogue de tenues — Killer Campus</title>
+  <meta name="description" content="Boutique de tenues universitaires Killer Campus. Catalogue et panier de démonstration.">
+  <link rel="stylesheet" href="../../styles/killer-campus.css?v=20261032">
+</head>
+<body class="app-body">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <div class="app-shell">
+    <aside class="sidebar" data-sidebar aria-label="Navigation de l’espace étudiant">
+      <div class="sidebar-top">
+        <a class="brand brand--compact" href="accueil.html">
+          <span class="brand-mark">KC</span>
+          <span class="brand-text"><span class="brand-name">Killer Campus</span><span class="brand-sub">Espace étudiant</span></span>
+        </a>
+        <button class="sidebar-close" type="button" aria-label="Fermer le menu" data-sidebar-close>
+          <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-group-label">Vue d’ensemble</div>
+        <a class="sidebar-link" href="dashboard_etudiant.html">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+          Tableau de bord
+        </a>
+        <a class="sidebar-link" href="#" data-demo-action="Mes cours : vue non incluse dans ce prototype.">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          Mes cours
+        </a>
+        <a class="sidebar-link" href="#" data-demo-action="Notes et résultats : vue non incluse dans ce prototype.">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 15 8.5 22 9.5 17 14.5 18.2 22 12 18.7 5.8 22 7 14.5 2 9.5 9 8.5z"/></svg>
+          Notes &amp; résultats
+        </a>
+
+        <div class="nav-group-label">Ressources</div>
+        <a class="sidebar-link" href="bibliotheque.html">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          Bibliothèque
+        </a>
+        <a class="sidebar-link is-active" href="catalogue_tenues.html" aria-current="page">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          Boutique
+          <span class="badge-count">2</span>
+        </a>
+        <a class="sidebar-link" href="preinscription.html">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/></svg>
+          Préinscription
+        </a>
+
+        <div class="nav-group-label">Compte</div>
+        <a class="sidebar-link" href="#" data-demo-action="Profil : vue non incluse dans ce prototype.">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Mon profil
+        </a>
+        <a class="sidebar-link" href="dashboard_admin.html">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M3 9h6"/></svg>
+          Administration
+        </a>
+      </nav>
+
+      <div class="sidebar-foot">
+        <div class="sidebar-user">
+          <span class="avatar avatar--red">AM</span>
+          <span class="sidebar-user-meta"><strong>Awa Mbaye</strong><span>Étudiante · L3</span></span>
+        </div>
+        <a class="sidebar-link" href="connexion.html">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="m16 17 5-5-5-5M21 12H9"/></svg>
+          Déconnexion
+        </a>
+      </div>
+    </aside>
+
+    <div class="sidebar-scrim" data-sidebar-scrim hidden></div>
+
+    <div class="app-main">
+      <header class="app-topbar">
+        <button class="app-menu" type="button" aria-label="Ouvrir le menu" aria-expanded="false" data-sidebar-toggle>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+        <div class="breadcrumb">Espace étudiant <span>/</span> <strong>Boutique</strong></div>
+        <div class="app-search">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="search" placeholder="Rechercher une tenue…" aria-label="Rechercher une tenue">
+        </div>
+        <div class="app-actions">
+          <button class="icon-btn" type="button" aria-label="Panier, 2 articles" data-demo-action="Panier : 2 articles — démonstration.">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
+            <span class="badge-count">2</span>
+          </button>
+          <a class="avatar avatar--red" href="#" aria-label="AM — Profil d’Awa Mbaye" data-demo-action="Profil : vue non incluse dans ce prototype.">AM</a>
+        </div>
+      </header>
+
+      <main class="app-content" id="contenu">
+        <div class="page-head">
+          <div>
+            <span class="eyebrow">Boutique officielle · démonstration</span>
+            <h1>Catalogue de tenues</h1>
+            <p>Tenues et accessoires aux couleurs du campus. Les prix et disponibilités sont simulés.</p>
+          </div>
+          <div class="page-actions">
+            <a class="btn btn--ghost btn--sm" href="#panier">Voir le panier (2)</a>
+          </div>
+        </div>
+
+        <div class="filter-bar" data-filter-group data-filter-target=".product-card">
+          <button class="chip is-active" type="button" data-filter="all">Tout</button>
+          <button class="chip" type="button" data-filter="polo">Polos</button>
+          <button class="chip" type="button" data-filter="hoodie">Sweats</button>
+          <button class="chip" type="button" data-filter="accessoire">Accessoires</button>
+          <button class="chip" type="button" data-filter="tenue">Tenues</button>
+          <span class="filter-spacer"></span>
+          <select class="select select--sm" aria-label="Trier les tenues">
+            <option>Nouveautés</option>
+            <option>Prix croissant</option>
+            <option>Prix décroissant</option>
+          </select>
+        </div>
+
+        <div class="shop-layout">
+          <div class="product-grid">
+            <h2 class="sr-only">Produits disponibles</h2>
+            <article class="product-card" data-category="polo tenue">
+              <div class="product-art product-art--red">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                <span class="badge badge--red" style="position:absolute;top:12px;left:12px">Nouveau</span>
+              </div>
+              <div class="product-body">
+                <div class="product-top">
+                  <div><h3 class="product-title">Polo Killer Campus</h3><p class="product-type">Coton bio · rouge</p></div>
+                </div>
+                <div class="product-price">12 000 <small>FCFA</small></div>
+                <div class="product-actions">
+                  <button class="btn btn--ghost btn--sm" type="button" data-demo-action="Détail produit : vue non incluse dans ce prototype.">Détails</button>
+                  <button class="btn btn--primary btn--sm" type="button" data-demo-action="Polo ajouté au panier (simulation).">Ajouter</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="hoodie">
+              <div class="product-art product-art--navy">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M9 6a3 3 0 0 0 6 0"/></svg>
+              </div>
+              <div class="product-body">
+                <div class="product-top">
+                  <div><h3 class="product-title">Sweat à capuche</h3><p class="product-type">Molleton · bleu marine</p></div>
+                </div>
+                <div class="product-price">24 000 <small>FCFA</small></div>
+                <div class="product-actions">
+                  <button class="btn btn--ghost btn--sm" type="button" data-demo-action="Détail produit : vue non incluse dans ce prototype.">Détails</button>
+                  <button class="btn btn--primary btn--sm" type="button" data-demo-action="Sweat ajouté au panier (simulation).">Ajouter</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="tenue">
+              <div class="product-art product-art--slate">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h8l4 4-3 7v7H7v-7L4 7z"/><path d="M9 3v4h6V3"/></svg>
+              </div>
+              <div class="product-body">
+                <div class="product-top">
+                  <div><h3 class="product-title">Blouse de laboratoire</h3><p class="product-type">Coton · blanc cassé</p></div>
+                </div>
+                <div class="product-price">18 500 <small>FCFA</small></div>
+                <div class="product-actions">
+                  <button class="btn btn--ghost btn--sm" type="button" data-demo-action="Détail produit : vue non incluse dans ce prototype.">Détails</button>
+                  <button class="btn btn--primary btn--sm" type="button" data-demo-action="Blouse ajoutée au panier (simulation).">Ajouter</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="accessoire">
+              <div class="product-art product-art--amber">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v11"/><path d="M4 19h16"/><path d="M9 4v6M15 4v6"/></svg>
+              </div>
+              <div class="product-body">
+                <div class="product-top">
+                  <div><h3 class="product-title">Casquette brodée</h3><p class="product-type">Accessoire · unisexe</p></div>
+                </div>
+                <div class="product-price">8 000 <small>FCFA</small></div>
+                <div class="product-actions">
+                  <button class="btn btn--ghost btn--sm" type="button" data-demo-action="Détail produit : vue non incluse dans ce prototype.">Détails</button>
+                  <button class="btn btn--primary btn--sm" type="button" data-demo-action="Casquette ajoutée au panier (simulation).">Ajouter</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="accessoire">
+              <div class="product-art product-art--green">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16v13H4z"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/><path d="M4 11h16"/></svg>
+              </div>
+              <div class="product-body">
+                <div class="product-top">
+                  <div><h3 class="product-title">Sac à dos campus</h3><p class="product-type">Toile recyclée · 18 L</p></div>
+                </div>
+                <div class="product-price">21 000 <small>FCFA</small></div>
+                <div class="product-actions">
+                  <button class="btn btn--ghost btn--sm" type="button" data-demo-action="Détail produit : vue non incluse dans ce prototype.">Détails</button>
+                  <button class="btn btn--primary btn--sm" type="button" data-demo-action="Sac ajouté au panier (simulation).">Ajouter</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="tenue">
+              <div class="product-art product-art--violet">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 7l8 4 8-4z"/><path d="M4 7v10l8 4 8-4V7"/><path d="M12 11v10"/></svg>
+              </div>
+              <div class="product-body">
+                <div class="product-top">
+                  <div><h3 class="product-title">Écharpe aux armes</h3><p class="product-type">Laine · édition limitée</p></div>
+                </div>
+                <div class="product-price">9 500 <small>FCFA</small></div>
+                <div class="product-actions">
+                  <button class="btn btn--ghost btn--sm" type="button" data-demo-action="Détail produit : vue non incluse dans ce prototype.">Détails</button>
+                  <button class="btn btn--primary btn--sm" type="button" data-demo-action="Écharpe ajoutée au panier (simulation).">Ajouter</button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <aside class="panel cart-panel" id="panier" aria-labelledby="cart-title">
+            <div class="panel-head">
+              <h2 class="panel-title" id="cart-title">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
+                Panier
+              </h2>
+              <span class="badge badge--red">2 articles</span>
+            </div>
+            <div class="panel-body">
+              <div class="cart-item">
+                <span class="cart-thumb"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></span>
+                <div class="cart-item-body"><strong>Polo Killer Campus</strong><span>Taille M · rouge</span></div>
+                <span class="cart-item-price">12 000 F</span>
+              </div>
+              <div class="cart-item">
+                <span class="cart-thumb"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M9 6a3 3 0 0 0 6 0"/></svg></span>
+                <div class="cart-item-body"><strong>Sweat à capuche</strong><span>Taille L · bleu marine</span></div>
+                <span class="cart-item-price">24 000 F</span>
+              </div>
+              <div class="cart-total"><span>Sous-total</span><strong>36 000 F</strong></div>
+              <button class="btn btn--primary btn--block" type="button" data-demo-action="Commande simulée : aucun paiement n’est effectué.">
+                Passer la commande (démo)
+              </button>
+              <p class="hint mt-14">Livraison et paiement non implémentés. Le bouton affiche uniquement un message de démonstration.</p>
+            </div>
+          </aside>
+        </div>
+
+        <p class="demo-note mt-24">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.7 2.4 17a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.7a2 2 0 0 0-3.4 0z"/></svg>
+          Les produits, prix et stocks sont fictifs. Aucun paiement ni aucune commande réelle n’est possible depuis cette maquette.
+        </p>
+      </main>
+    </div>
+  </div>
+
+  <div class="toast" role="status" aria-live="polite" data-toast>
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+    <span data-toast-message>Action simulée.</span>
+  </div>
+
+  <script src="../../scripts/app.js?v=20261032"></script>
+</body>
+</html>

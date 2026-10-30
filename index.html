@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Killer Campus — Dossier de conception &amp; maquettes</title>
+  <meta name="description" content="Hub du dossier de conception Killer Campus : analyse, identité visuelle, architecture et sept maquettes HTML/CSS.">
+  <link rel="stylesheet" href="styles/killer-campus.css?v=20261032">
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">KC</span>
+        <span class="brand-text">
+          <span class="brand-name">Killer Campus</span>
+          <span class="brand-sub">Dossier de conception</span>
+        </span>
+      </a>
+
+      <nav class="topbar-nav" aria-label="Navigation principale">
+        <a class="topbar-link is-active" href="index.html" aria-current="page">Hub</a>
+        <a class="topbar-link" href="sources/maquettes/accueil.html">Accueil</a>
+        <a class="topbar-link" href="sources/maquettes/dashboard_etudiant.html">Étudiant</a>
+        <a class="topbar-link" href="sources/maquettes/dashboard_admin.html">Admin</a>
+      </nav>
+
+      <div class="topbar-actions">
+        <a class="btn btn--ghost btn--sm" href="sources/README.md">Lire le dossier</a>
+        <a class="btn btn--primary btn--sm" href="sources/maquettes/accueil.html">Voir la maquette</a>
+        <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-mobile" data-menu-toggle>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-nav" id="menu-mobile" data-mobile-nav>
+      <nav class="mobile-nav-inner" aria-label="Navigation mobile">
+        <a href="index.html" aria-current="page">Hub</a>
+        <a href="sources/maquettes/accueil.html">Accueil</a>
+        <a href="sources/maquettes/dashboard_etudiant.html">Étudiant</a>
+        <a href="sources/maquettes/dashboard_admin.html">Admin</a>
+        <a href="sources/README.md">Lire le dossier</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <div class="container">
+      <section class="hub-hero" aria-labelledby="hub-title">
+        <span class="eyebrow">Projet Killer Campus · 2026</span>
+        <h1 id="hub-title">Un campus.<br><em>Sept écrans.</em><br>Une direction.</h1>
+        <p>
+          Dossier de conception complet pour une plateforme de services universitaires.
+          La grille de services 4×3 de la référence Academia est conservée ; son esthétique
+          claire est remplacée par un mode sombre, un rouge sang et une typographie percutante.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn--primary" href="sources/maquettes/dashboard_etudiant.html">
+            Explorer le tableau de bord
+            <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="sources/analyse_projet.md">Lire l’analyse projet</a>
+        </div>
+        <p class="hero-note">
+          <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          Prototype front-end autonome · aucune donnée officielle inventée · aucun paiement réel
+        </p>
+      </section>
+
+      <section class="section section--tight" aria-labelledby="mockups-title">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Livrables navigables</span>
+            <h2 id="mockups-title">Les sept maquettes</h2>
+          </div>
+          <p>
+            Chaque écran est autonome, responsive et utilise le même design system.
+            Les interactions sont simulées : les boutons affichent un message, sans effet serveur.
+          </p>
+        </div>
+
+        <div class="hub-grid">
+          <a class="hub-card" href="sources/maquettes/accueil.html">
+            <svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 11 9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg>
+            <h3>Accueil</h3>
+            <p>Vitrine publique, promesse de marque, aperçu du tableau de bord et parcours candidat.</p>
+            <span>Public · 01</span>
+          </a>
+          <a class="hub-card" href="sources/maquettes/connexion.html">
+            <svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><path d="m10 17 5-5-5-5M15 12H3"/></svg>
+            <h3>Connexion</h3>
+            <p>Accès à l’espace étudiant, formulaire de démonstration et rappel de confidentialité.</p>
+            <span>Auth · 02</span>
+          </a>
+          <a class="hub-card" href="sources/maquettes/preinscription.html">
+            <svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/></svg>
+            <h3>Préinscription</h3>
+            <p>Dossier candidat en quatre étapes, pièces justificatives et récapitulatif.</p>
+            <span>Parcours · 03</span>
+          </a>
+          <a class="hub-card" href="sources/maquettes/dashboard_etudiant.html">
+            <svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+            <h3>Tableau de bord étudiant</h3>
+            <p>La grille 4×3 des services, les statistiques et l’activité récente.</p>
+            <span>Étudiant · 04</span>
+          </a>
+          <a class="hub-card" href="sources/maquettes/catalogue_tenues.html">
+            <svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            <h3>Catalogue de tenues</h3>
+            <p>Boutique filtrable, fiches produit et panier de démonstration clairement signalé.</p>
+            <span>Étudiant · 05</span>
+          </a>
+          <a class="hub-card" href="sources/maquettes/bibliotheque.html">
+            <svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            <h3>Bibliothèque numérique</h3>
+            <p>Ressources gratuites et payantes, filtres, sélection à la une et emprunts simulés.</p>
+            <span>Étudiant · 06</span>
+          </a>
+          <a class="hub-card" href="sources/maquettes/dashboard_admin.html">
+            <svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M3 9h6"/></svg>
+            <h3>Tableau de bord admin</h3>
+            <p>Vue d’ensemble, utilisateurs, tâches à traiter et activité de la plateforme.</p>
+            <span>Admin · 07</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section section--tight" aria-labelledby="docs-title">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Dossier écrit</span>
+            <h2 id="docs-title">Documents de conception</h2>
+          </div>
+          <p>
+            Les choix de direction artistique, la structure des pages et les limites du prototype
+            sont documentés séparément pour faciliter la revue.
+          </p>
+        </div>
+        <div class="doc-links">
+          <a class="doc-link" href="sources/cahier_des_charges.md">Cahier des charges</a>
+          <a class="doc-link" href="sources/analyse_projet.md">Analyse du projet</a>
+          <a class="doc-link" href="sources/analyse_referes.md">Analyse des références</a>
+          <a class="doc-link" href="sources/identite_visuelle.md">Identité visuelle</a>
+          <a class="doc-link" href="sources/architecture_pages.md">Architecture des pages</a>
+          <a class="doc-link" href="sources/explications_techniques.md">Explications techniques</a>
+          <a class="doc-link" href="sources/points_ameliorer_questions.md">Points à améliorer &amp; questions</a>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="cta-band">
+          <div>
+            <span class="eyebrow">État du prototype</span>
+            <h2>Prêt pour la revue</h2>
+            <p>
+              Sept écrans HTML, un design system CSS unique, des polices auto-hébergées et des
+              interactions de démonstration sans dépendance externe.
+            </p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn--primary" href="sources/maquettes/accueil.html">Commencer la visite</a>
+            <a class="btn btn--ghost" href="README.md">Ouvrir le README</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a class="brand brand--compact" href="index.html">
+            <span class="brand-mark">KC</span>
+            <span class="brand-text"><span class="brand-name">Killer Campus</span><span class="brand-sub">Dossier de conception</span></span>
+          </a>
+          <p>Prototype de démonstration. Les données, candidatures, commandes et paiements sont simulés et ne produisent aucun effet réel.</p>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <p class="footer-col-title">Maquettes</p>
+            <a href="sources/maquettes/accueil.html">Accueil</a>
+            <a href="sources/maquettes/dashboard_etudiant.html">Espace étudiant</a>
+            <a href="sources/maquettes/catalogue_tenues.html">Boutique</a>
+            <a href="sources/maquettes/dashboard_admin.html">Administration</a>
+          </div>
+          <div class="footer-col">
+            <p class="footer-col-title">Ressources</p>
+            <a href="sources/identite_visuelle.md">Identité visuelle</a>
+            <a href="sources/architecture_pages.md">Architecture</a>
+            <a href="references/referee_academia_20261029.jpg">Capture de référence</a>
+            <a href="README.md">README</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Killer Campus — dossier de conception</span>
+        <span>HTML/CSS autonome · polices locales</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/app.js?v=20261032"></script>
+</body>
+</html>
